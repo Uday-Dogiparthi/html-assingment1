@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Animation: Moving Element</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: black;
+      position: relative;
+      animation: move 2s linear infinite;
+    }
+    
+    @keyframes move {
+      to { transform: translateX(100vw); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
