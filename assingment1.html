@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fixed Header, Centered Content, and Fixed Footer Layout</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+  <main>
+    <h2>Content</h2>
+  </main>
+  <footer>
+    <h3>Footer</h3>
+  </footer>
+</body>
+</html>
